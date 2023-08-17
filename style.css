@@ -3,6 +3,14 @@
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .nav-search {
   display: flex;
   width: 300px;
@@ -10,65 +18,85 @@
   border: 1px solid black;
   border-radius: 10px;
   justify-content: space-evenly;
-  margin-left: 58px;
 }
+.nav-search{
+  border: 3px solid #b7b0b0;
+}
+
 .search-icon {
   width: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 15%;
+  background-color: white;
+  color: #0040ff;
+  border-radius:5px 0 0 5px;
+
 }
+
 .search {
   width: 100%;
   font-size: 1rem;
-  border-radius: 5px 0 0 5px;
+  border-radius:0 5px 5px 0;
 }
+
 .card {
-  width: 90%;
+  width: 30vw;
+  height: 80vh;
   max-width: 470px;
   background: linear-gradient(135deg, #00feba, #5b548a);
   color: #fff;
-  margin: 100px auto 0;
   border-radius: 20px;
   padding: 40px 35px;
   text-align: center;
+  display: grid;
+  justify-content: center;
 }
+
 .btn {
   height: 40px;
   width: 40px;
   border-radius: 0px 10px 10px 0;
 }
+
 .weather-icon {
   width: 170px;
   margin-top: 30px;
 }
+
 .weather h1 {
   font-size: 80px;
   font-weight: 500;
 }
+
 .weather h2 {
   font-size: 42px;
   font-weight: 400;
   margin-top: -10px;
 }
+
 .details {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 20px;
   margin-top: 50px;
+  /* width: auto; */
 }
+
 .col {
   display: flex;
   align-items: center;
   text-align: left;
 }
+
 .col img {
   width: 40px;
   margin-right: 10px;
@@ -76,12 +104,21 @@
 
 .humidity,
 .wind {
-  font-size: 28px;
+  font-size: 18px;
   margin-top: -6px;
 }
-.nav-search:hover {
-  box-shadow: 5px 8px 8px grey;
-}
+
 .nav-search {
   transition: 1s;
+}
+
+input {
+  background-color: white;
+  border: 1px solid transparent;
+  outline: none;
+  padding-left: 10px;
+}
+
+button {
+  border: 1px solid transparent;
 }
